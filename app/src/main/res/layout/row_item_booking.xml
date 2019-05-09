@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/qty_item_booking"
+        android:text="5"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/qty_item_booking"
+        android:layout_toLeftOf="@+id/price_item_booking"
+        android:id="@+id/title_item_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Header"/>
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_alignParentRight="true"
+        android:text="Rp. 5000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_item_booking"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

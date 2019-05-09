@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dang.program.id.dangapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/food"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/food"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="dang.program.id.dangapps.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dang.program.id.dangapps.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name="dang.program.id.dangapps.SignupActivity" />
+        <activity
+            android:name="dang.program.id.dangapps.menu_booking.menu_place_resto.RestoPlaceActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="dang.program.id.dangapps.AddDataActivity" />
+        <activity android:name="dang.program.id.dangapps.menu_booking.menu_detail_place_resto.DetailPlaceRestoActivity" />
+        <activity
+            android:name="dang.program.id.dangapps.menu_booking.menu_detail_booking.MenuDetailBookingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="dang.program.id.dangapps.menu_booking.menu_detail_booking_order.MenuDetailBookingOrderActivity" />
+        <activity android:name="dang.program.id.dangapps.menu_booking.menu_detail_order_final.MenuDetailOrderFinalActivity" />
+        <activity android:name="dang.program.id.dangapps.menu_booking.menu_detail_booking.AddDataMenuActivity" />
+        <activity android:name="dang.program.id.dangapps.menu_history.TambahHistoryActivity"/>
+    </application>
+
+</manifest>

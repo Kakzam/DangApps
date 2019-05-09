@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "171614375771",
+    "firebase_url": "https://dang-apps.firebaseio.com",
+    "project_id": "dang-apps",
+    "storage_bucket": "dang-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171614375771:android:1a5d87e6a80606c1",
+        "android_client_info": {
+          "package_name": "dang.program.id.dangapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171614375771-naondf793ik69dvljfmcstonsqtr3f0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDocXyiE16ZVdICIAhCG3kOsiQjGsHvsAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171614375771-naondf793ik69dvljfmcstonsqtr3f0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

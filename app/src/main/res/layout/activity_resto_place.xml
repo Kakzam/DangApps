@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:elevation="3dp" />
+
+            <TextView
+                android:id="@+id/tv_resto_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Resto"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:text="Add Data"
+                android:id="@+id/btn_tambah_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_field"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toStartOf="@+id/search_btn"
+                    android:background="@drawable/search_layout"
+                    android:ems="10"
+                    android:paddingRight="10dp"
+                    android:hint="Search here..."
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"
+                    android:textColor="#999999"
+                    android:textSize="16sp"
+                    android:layout_toLeftOf="@+id/search_btn" />
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBottom="@+id/search_field"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/search_field"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/search_button"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_place_resto_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
